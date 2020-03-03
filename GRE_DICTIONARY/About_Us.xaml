@@ -1,0 +1,30 @@
+﻿<Window x:Class="GRE_DICTIONARY.About_Us"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GRE_DICTIONARY"
+        mc:Ignorable="d"
+        Title="About_Us" Height="300" Width="450" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="8402.jpg"/>
+        </Grid.Background>
+        <Label x:Name="label1" Content="This software is for you to keep your GRE words in hand at any time." HorizontalAlignment="Left" Height="31" Margin="2,70,0,0" VerticalAlignment="Top" Width="448" Foreground="#FFF7EFEF" Cursor="None" FontFamily="Arial"/>
+        <Label x:Name="label3" Content="Contributor" HorizontalAlignment="Left" Height="34" Margin="2,106,0,0" VerticalAlignment="Top" Width="448" Background="#FF12380C" FontFamily="Arial Black" FontSize="18" Padding="160,5,5,5" Foreground="#FFFDF9F9"/>
+        <Label x:Name="label2" Content="" HorizontalAlignment="Left" Height="84" Margin="21,156,0,0" VerticalAlignment="Top" Width="86">
+            
+        </Label>
+        <Label x:Name="label4" Content="Abedin Hassan, Sumnan Lasker" HorizontalAlignment="Left" Height="30" Margin="112,155,0,0" VerticalAlignment="Top" Width="274" Foreground="#FFF7F2F2" FontFamily="Arial Black" FontSize="14"/>
+        <Label x:Name="label5" Content="Students of Computer Science and Engineering " HorizontalAlignment="Left" Height="27" Margin="112,180,0,0" VerticalAlignment="Top" Width="298" FontFamily="Arial" Foreground="#FFFBF6F6" Cursor="" FontSize="13"/>
+        <Label x:Name="label5_Copy" Content="North Western University, Khulna." HorizontalAlignment="Left" Height="27" Margin="112,198,0,0" VerticalAlignment="Top" Width="298" FontFamily="Arial" Foreground="#FFFBF6F6" Cursor="" FontSize="13"/>
+        <Label x:Name="label" Content="About Us" HorizontalAlignment="Left" Height="61" Margin="0,1,0,0" VerticalAlignment="Top" Width="450" Foreground="#FFFDFAFA" FontSize="28" FontFamily="Arial Black" Padding="150,15,5,5"/>
+        <Button x:Name="back_button" Content="" HorizontalAlignment="Left" Height="20" Margin="-1,0,0,0" VerticalAlignment="Top" Width="24" BorderBrush="White" Click="back_btn_click">
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+
+        </Button>
+
+    </Grid>
+</Window>

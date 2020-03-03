@@ -1,0 +1,45 @@
+﻿<Window x:Class="GRE_DICTIONARY.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GRE_DICTIONARY"
+        mc:Ignorable="d"
+        Title="Login" Height="300" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" >
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="8402.jpg"/>
+        </Grid.Background>
+        <Label x:Name="label" HorizontalAlignment="Left" Height="60" Margin="-1,-1,0,0" VerticalAlignment="Top" Width="401" Foreground="#FFF7F1F1" FontFamily="Arial Black" FontSize="30" Padding="150,15,5,5" Content="Login"/>
+        <Label x:Name="label1" Content="User Name" HorizontalAlignment="Left" Height="25" Margin="10,104,0,0" VerticalAlignment="Top" Width="102" Foreground="#FFFFF7F7" FontFamily="Arial" FontSize="15" FontWeight="Bold" Padding="15,3,5,5">
+            <Label.Background>
+                <ImageBrush ImageSource="8402.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="label1_Copy" Content="Password" HorizontalAlignment="Left" Height="25" Margin="10,149,0,0" VerticalAlignment="Top" Width="102" Foreground="#FFFFF7F7" FontFamily="Arial" FontSize="15" FontWeight="Bold" Padding="15,3,5,5">
+            <Label.Background>
+                <ImageBrush ImageSource="8402.jpg"/>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="text_name" Height="25" Margin="117,104,10,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="passwordBox" Height="25" Margin="117,149,10,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Login" HorizontalAlignment="Left" Height="35" Margin="86,214,0,0" VerticalAlignment="Top" Width="100" Foreground="#FFF9F4F4" FontFamily="Arial Black" FontSize="18" Click="login_btn_click" BorderBrush="#FF707070" Cursor="Hand">
+            <Button.Background>
+                <ImageBrush ImageSource="8402.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="cancle_btn" Content="Cancel" HorizontalAlignment="Left" Height="35" Margin="221,214,0,0" VerticalAlignment="Top" Width="100" Foreground="#FFF9F4F4" FontFamily="Arial Black" FontSize="18" BorderBrush="#FF707070" Click="cancle_btn_click" Cursor="Hand">
+            <Button.Background>
+                <ImageBrush ImageSource="8402.jpg"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="lbl_msg" Content="" HorizontalAlignment="Left" Height="28" Margin="10,59,0,0" VerticalAlignment="Top" Width="380" Foreground="#FFB01212" FontFamily="Arial Black" Padding="50,5,5,5"/>
+        <Button x:Name="login_btn" Content="" HorizontalAlignment="Left" Height="15" VerticalAlignment="Top" Width="22" Click="login_back_btn_click" Cursor="" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+
+
+    </Grid>
+</Window>

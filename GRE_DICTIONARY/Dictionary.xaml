@@ -1,0 +1,32 @@
+﻿<Window x:Class="GRE_DICTIONARY.Dictionary"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GRE_DICTIONARY"
+        mc:Ignorable="d"
+        Title="Dictionary" Height="700" Width="650" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Cursor="Hand">
+        <Grid.Background>
+            <ImageBrush ImageSource="8402.jpg"/>
+        </Grid.Background>
+        <Button x:Name="cross_btn" Content="" Height="23" Margin="614,8,8,0" VerticalAlignment="Top" Click="cross_btn_click">
+            <Button.Background>
+                <ImageBrush ImageSource="cross.PNG"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="textBox" Margin="24,88,75,585" TextWrapping="Wrap"/>
+        <Button x:Name="search_btn" Content="" Height="28" Margin="580,87,26,0" VerticalAlignment="Top" Click="search_btn_click">
+            <Button.Background>
+                <ImageBrush ImageSource="search.PNG"/>
+            </Button.Background>
+        </Button>
+        <DataGrid x:Name="dataGrid" Margin="24,137,26,25" Loaded="dictionary_loaded"/>
+        <Label x:Name="label" Content="Dictionary" HorizontalAlignment="Left" Height="41" Margin="0,36,0,0" VerticalAlignment="Top" Width="650" Foreground="#FFF9F5F5" FontFamily="Arial Black" FontSize="25" Padding="240,5,5,5">
+            <Label.Background>
+                <ImageBrush ImageSource="8402.jpg"/>
+            </Label.Background>
+        </Label>
+
+    </Grid>
+</Window>
